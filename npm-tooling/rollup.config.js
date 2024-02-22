@@ -4,8 +4,13 @@ export default {
   input: "src/index.ts",
   output: [
     {
-      file: "build/bundle.ts",
+      file: "build/esm/bundle.ts",
       format: "esm",
+      sourcemap: true,
+    },
+    {
+      file: "build/cjs/bundle.ts",
+      format: "cjs",
       sourcemap: true,
     },
   ],

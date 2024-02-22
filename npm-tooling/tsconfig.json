@@ -11,6 +11,7 @@
 //   },
 //   "include": ["src/**/*"]
 // }
+// git remote add origin https://github.com/eghazaryan/npm-tooling.git
 
 {
   "compilerOptions": {
