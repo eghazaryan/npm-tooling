@@ -4,14 +4,12 @@ export default {
   input: "src/index.ts",
   output: [
     {
-      file: "build/esm/bundle.ts",
+      file: "build/esm/bundle.mjs",
       format: "esm",
-      sourcemap: true,
     },
     {
-      file: "build/cjs/bundle.ts",
+      file: "build/cjs/bundle.cjs",
       format: "cjs",
-      sourcemap: true,
     },
   ],
   plugins: [

@@ -16,7 +16,8 @@
   "scripts": {
     "build": "rollup --config",
     "prettier:write": "prettier . --write",
-    "prettier:check": "prettier . --check"
+    "prettier:check": "prettier . --check",
+    "test": "\"npm run prettier:check && npm run typecheck\","
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",

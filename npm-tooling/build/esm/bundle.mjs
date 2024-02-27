@@ -7,4 +7,3 @@ function unusedSum(a, b) {
 }
 
 export { sum, unusedSum };
-//# sourceMappingURL=bundle.ts.map

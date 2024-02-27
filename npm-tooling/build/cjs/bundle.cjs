@@ -1,3 +1,5 @@
+'use strict';
+
 function sum(a, b) {
     return a + b;
 }
@@ -6,5 +8,5 @@ function unusedSum(a, b) {
     return a + b;
 }
 
-export { sum, unusedSum };
-//# sourceMappingURL=bundle.ts.map
+exports.sum = sum;
+exports.unusedSum = unusedSum;
