@@ -1,9 +1,18 @@
 {
-  "name": "@eghazaryan/npm-tooling",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@elenghazaryan/test-package",
+  "version": "1.0.4",
   "license": "MIT",
   "type": "module",
+  "main": "./build/cjs/bundle.cjs",
+  "module": "./build/esm/bundle.mjs",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./build/cjs/bundle.cjs",
+      "import": "./build/esm/bundle.mjs"
+    },
+    "./types": "./build/cjs/types/index.d.ts"
+  },
   "scripts": {
     "build": "rollup --config",
     "prettier:write": "prettier . --write",
