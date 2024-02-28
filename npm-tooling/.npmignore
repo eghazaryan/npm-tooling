@@ -1,3 +1,15 @@
-src/
+/src
 /node_modules
 yarn.lock
+.github
+.editorconfig
+.eslingrc.js
+.gitignore
+.npmrc
+.nvmrc
+.prettierrc
+.prettierignore
+Notes.md
+QUESTIONS.md
+rollup.config.js
+tsconfig.json
