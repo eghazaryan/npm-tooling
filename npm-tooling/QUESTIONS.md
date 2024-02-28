@@ -1,5 +1,6 @@
 1 how to run .editorconfig +
 2 why should we use both rollup and esbuild?
+3 why should we use main and module in package.json, if exports is modern alternative of main?
 3 Before build should i delete previous build folder? (nested build folders build/*/types/build)+
 
 why to use main with exports if exports is modern alternative of  main?
@@ -13,19 +14,11 @@ uses export and import
 is asynchronous. Modules are loaded and executed asynchronously, which can lead to better performance in certain scenarios.?
 
 What is the difference between esm and cjs formats? 
-  ESM yses export and import, CJS uses require() and module.exports
-  ESM is asynchronous and load modules synchronously
-  CJS doesn't support tree shaking, it bundles all all exports
-
-
-Which format is better?
+  ESM uses export and import, is asynchronous (which can lead to better performance in certain scenarios.?)
+  CJS uses require() and module.exports, is synchronously and doesn't support tree shaking, it bundles all all exports
+  
 ESM is more suitable for web browsers and  CJS for server-side environments.
 
-CJS
-uses require() and module.exports
-
-load modules synchronously
-doesn't support tree shaking, it bundles all all exports
 
 
 
